@@ -1,5 +1,6 @@
 # SENN-app
-Master thesis made in Qt C/C++ 
+
+![image](https://user-images.githubusercontent.com/50624481/132002849-ad566890-1fbb-4d71-aeee-f8f2c7fc3972.png) 
 
 ## 📥 Download installation setup for Windows [here](https://drive.google.com/uc?export=download&id=1pJxE7oBTfhh4YipyvsrfbqhvHwmcAkdE)⏬
 
