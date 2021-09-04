@@ -107,7 +107,7 @@ Once you download, fork or clone source code you will see this structure of the 
 
 In **Source** files, we have mainwindow.cpp which contains functions and logic of MainWindow screen, it is connected with parametersscreen.cpp which contains functions and logic of Parameters window. UML diagram shows functions used and parent-child relation between main window and parameters screen
 
-![Uml-diagram](https://user-images.githubusercontent.com/50624481/131505086-85b0ee71-7ab9-419d-a0bb-2d50d0468ce6.png)+
+![Uml-diagram](https://user-images.githubusercontent.com/50624481/131505086-85b0ee71-7ab9-419d-a0bb-2d50d0468ce6.png)
 
 **Form** files contain a designer view of the main window and also the parameters window.
 A designer view is a helpful tool because it allows you to place elements and immediately see how it looks rather than programming it from scratch and adding CSS, after you add some elements you can then go directly in mainwindow.cpp or parameterswindow.cpp and add code functionalities and logic.
@@ -168,7 +168,26 @@ The thing to bear in mind is that this app was planed and design to be deployed,
 
 As said above having deployed application is a great way for people whose primary focus is not software development to have a fast and simple approach to the usage of this application.
 
+To deploy the app quickly for Windows OS follow these steps:
 
+1. First right-click on an app and choose the deploy option
+
+![deployment-qt](https://user-images.githubusercontent.com/50624481/132103294-e2ee87a3-9390-4adb-b9ed-ba5aa9b74c7e.png)
+
+2. Then you will see the build deploy folder created in your files 
+
+3. In the build folder there is debug folder where we can find all files that we need for deployment, we can copy these files and paste them into a location where we want to have our deployed app. 
+
+4. The next step is to open qt terminal and add this command:
+
+```shell 
+cd our-file-location-path
+```
+5. Then run command: 
+ 
+```shell 
+windeployqt.exe --qucik .
+```
 
 ## License
 
