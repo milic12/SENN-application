@@ -85,7 +85,7 @@ After we run button Run For Selected Files we will be asked to select folder whe
 
 ## ⌨️ For Developers
 
-### 📥 Download repo [here]() ⏬
+### 📥 Download repo [here](https://github.com/milic12/SENN-application/archive/refs/heads/master.zip) ⏬
 
 Once you download, fork or clone source code you will see this structure of the app:
 
