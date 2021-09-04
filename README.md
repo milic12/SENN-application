@@ -1,4 +1,4 @@
-# SENN-app
+# SENN- Qt application
 
 ![image](https://user-images.githubusercontent.com/50624481/132002849-ad566890-1fbb-4d71-aeee-f8f2c7fc3972.png) 
 
