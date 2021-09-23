@@ -30,11 +30,11 @@ public:
     ~MainWindow();
 
 private slots:
-    void onStartButtonClicked();
+    //void onStartButtonClicked();
     void onCloseButtonClicked();
-    void onSetParametersButtonClicked();
-    void onSaveButtonClicked();
-    void onSaveAsExcelFileButtonClicked();
+    //void onSetParametersButtonClicked();
+    //void onSaveButtonClicked();
+    //void onSaveAsExcelFileButtonClicked();
     void saveAsExcelTheDataFile(QString excelFile);
     void onAddParametersButtonClicked();
     void onSelectAndRunParametersClicked();
