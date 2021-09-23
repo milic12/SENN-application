@@ -76,8 +76,7 @@ files, then simply clicking this button you have all files selected ready to be 
 - **Run For Selected Files** button runs through SENN mathematical equations, with parameters which we added, either one or multiple parameters ( for multiple output files), here we have added functionality that converts the output of SENN data.out text file, converts it into an excel file, and sorts from all unnecessary information, specific information that we need about our simulation.
 More about this in the developer section.
 
-After we run button Run For Selected Files we will be asked to select folder where we will save our excel, then we after 
-
+After we run the button Run For Selected Files we will be asked to select a folder where we will save our excel, then we can see results, which is now an excel file with filtered values that we need.
 ![image](https://user-images.githubusercontent.com/50624481/131337090-52ff33e2-715c-4501-a9f2-19b0699e5a67.png)
 
 
