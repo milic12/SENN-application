@@ -159,6 +159,42 @@ To menition some of classes you my want to change, like saveAsExcel class
 
 You can see here if statements, which have a role to detect specific words from where you want to start filtering data.out file and have it at the end converted to an excel file. Now here you can add changes if you need other values from data.out files.
 
+checkParmeterEquation function has a role to check and detect wrong parameters combination, for this mathematical model and disables running the program. This function can be further extended with new other conditional statements. 
+
+```c++
+bool MainWindow::checkParmeterEquation() {
+    double NLIN1 = this->ui->fiberNLIN1SpinBox->value();
+    double NLIN2 = this->ui->fiberNLIN2SpinBox->value();
+    double NNODES = this->ui->fiberNNODESSpinBox->value();
+    double NODE1 = this->ui->fiberNODE1SpinBox->value();
+
+    if((NLIN1>=1) && (NLIN1<=NNODES ) && (NLIN2 >=NLIN1 && NLIN2 <= NNODES) && (NODE1 >=1 && NODE1 <=NNODES))
+        return true;
+}
+
+void MainWindow::changeAddParametersStatus() {
+    if(this->checkParmeterEquation())
+        this->ui->addParametersButtton->setEnabled(true);
+    else
+        this->ui->addParametersButtton->setEnabled(false);
+}
+
+void MainWindow::on_fiberNLIN1SpinBox_valueChanged(double arg1) {
+    changeAddParametersStatus();
+}
+
+void MainWindow::on_fiberNNODESSpinBox_valueChanged(double arg1) {
+    changeAddParametersStatus();
+}
+
+void MainWindow::on_fiberNODE1SpinBox_valueChanged(double arg1) {
+    changeAddParametersStatus();
+}
+
+void MainWindow::on_fiberNLIN2SpinBox_valueChanged(double arg1) {
+    changeAddParametersStatus();
+```
+
 ### 🚀  Deployment 
 
 After we finished app production and developement now we can deploy our app to siplify usage for non-developers, Qt docs for [Windows](https://doc.qt.io/qt-5/windows-deployment.html) also for [macOS](https://doc.qt.io/qt-5/macos-deployment.html) and [Linux](https://doc.qt.io/qt-5/linux-deployment.html).
